@@ -1,0 +1,508 @@
+
+<!-- saved from url=(0042)file:///C:/Users/HP/Downloads/cv%20og.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Resume generator</title>
+	<link rel="stylesheet" type="text/css" media="print" href="./cv og_files/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="./cv og_files/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./cv og_files/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./cv og_files/column_scroll.css">
+	<link rel="stylesheet" type="text/css" href="./cv og_files/thin_scroll.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="./cv og_files/theme.css">
+	<link rel="stylesheet" media="print" type="text/css" href="./cv og_files/theme.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="./cv og_files/main.css">
+	<link rel="stylesheet" media="print" type="text/css" href="./cv og_files/main.css">
+	<link href="./cv og_files/css" rel="stylesheet" type="text/css">
+	<link href="./cv og_files/css(1)" rel="stylesheet" type="text/css">
+	<meta name="description" content="Online document editor like interface to create and save Resume for srec">
+	<meta name="keywords" content="resume,cv,maker,creator,generator,srec,snr">
+	
+	
+</head>
+
+<body class="">
+
+
+
+
+<div class="container-fluid">
+
+	<div class="row">
+
+
+		<div class="col-sm-3 no-print" id="left">
+
+			<div id="panel">
+
+				<button class="btn btn-block btn-primary" data-toggle="modal" data-target="#usageModal">VIEW INSTRUCTIONS</button>
+				<button class="btn btn-block btn-success" onclick="printAsPdf()">PRINT AS PDF</button>
+
+				<hr>
+
+				
+					Minor
+					<div class="toggle-button">
+						<div class="toggle-option" data-toggle="minor" id="minorShow">Show</div>
+						<div class="toggle-option selected" data-toggle="minor" id="minorHide">Hide</div>
+					</div>
+				
+				<h5>
+					Contact lines
+					<div class="toggle-button">
+						<div class="toggle-option" data-toggle="contact" id="contact3">3</div>
+						<div class="toggle-option selected" data-toggle="contact" id="contact4">4</div>
+						<div class="toggle-option" data-toggle="contact" id="contact5">5</div>
+					</div>
+				</h5>
+				<h5>
+					Horizontal margin
+					<div class="toggle-button">
+						<div class="toggle-option" data-toggle="margin" id="margin1">1</div>
+						<div class="toggle-option" data-toggle="margin" id="margin2">2</div>
+						<div class="toggle-option" data-toggle="margin" id="margin3">3</div>
+						<div class="toggle-option" data-toggle="margin" id="margin4">4</div>
+						<div class="toggle-option selected" data-toggle="margin" id="margin5">5</div>
+						<div class="toggle-option" data-toggle="margin" id="margin6">6</div>
+					</div>
+				</h5>
+				
+				<h5>
+					Line spacing
+					<div class="toggle-button">
+						<div class="toggle-option" data-toggle="line" id="line1">1</div>
+						<div class="toggle-option" data-toggle="line" id="line2">2</div>
+						<div class="toggle-option" data-toggle="line" id="line3">3</div>
+						<div class="toggle-option selected" data-toggle="line" id="line4">4</div>
+						<div class="toggle-option" data-toggle="line" id="line5">5</div>
+						<div class="toggle-option" data-toggle="line" id="line6">6</div>
+					</div>
+				</h5>
+				<h5>
+					Center column no.
+					<div class="toggle-button">
+						<div class="toggle-option multi-select" data-toggle="column" id="column1">1</div>
+						<div class="toggle-option multi-select" data-toggle="column" id="column2">2</div>
+						<div class="toggle-option multi-select" data-toggle="column" id="column3">3</div>
+						<div class="toggle-option multi-select selected" data-toggle="column" id="column4">4</div>
+					</div>
+				</h5>
+				
+				<h5>
+					Color
+					<div class="toggle-button">
+						<div class="toggle-option" data-toggle="line" id="color1" style="background-color : #bf80ff" onclick="changeColor1()">1</div>
+						<div class="toggle-option" data-toggle="line" id="color2" style="background-color : #ff944d" onclick="changeColor2()">2</div>
+						<div class="toggle-option" data-toggle="line" id="color3" style="background-color : #66d9ff" onclick="changeColor3()">3</div>
+						<div class="toggle-option selected" data-toggle="line" id="color4" style="background-color : LightGray;" onclick="changeColor4()">4</div>
+						<div class="toggle-option" data-toggle="line" id="color5" style="background-color : #ff99ff" onclick="changeColor5()">5</div>
+						<div class="toggle-option" data-toggle="line" id="color6" style="background-color : #70db70" onclick="changeColor6()">6</div>
+					</div>
+				</h5>
+				
+				<br>
+				
+				<div id="customTemplateOptions">
+					<h5>
+						Font type
+						<div class="toggle-button">
+							<div class="toggle-option" data-toggle="font" id="fontVerdanaSans">1</div>
+							<div class="toggle-option" data-toggle="font" id="fontVerdanaSerif">2</div>
+							<div class="toggle-option" data-toggle="font" id="fontRoboto">3</div>
+							<div class="toggle-option selected" data-toggle="font" id="fontDroid">4</div>
+						</div>
+					</h5>
+					<h5>
+						Title case
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="case" id="caseNormal">Default</div>
+							<div class="toggle-option" data-toggle="case" id="caseUpper">Uppercase</div>
+						</div>
+					</h5>
+					<h5>
+						Title style
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="title" id="titleRuled">Ruled</div>
+							<div class="toggle-option" data-toggle="title" id="titleShaded">Shaded</div>
+						</div>
+					</h5>
+					<h5>
+						Title rule position
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="rule" id="ruleAbove">Above title</div>
+							<div class="toggle-option" data-toggle="rule" id="ruleBelow">Below title</div>
+						</div>
+					</h5>
+					<br>
+					<h5>
+						Image
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="image" id="imageShow">Show</div>
+							<div class="toggle-option" data-toggle="image" id="imageHide">Hide</div>
+						</div>
+					</h5>
+					<h5>
+						Roll No
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="roll" id="rollShow">Show</div>
+							<div class="toggle-option" data-toggle="roll" id="rollHide">Hide</div>
+						</div>
+					</h5>
+					<h5>
+						Course
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="course" id="course1">1 line</div>
+							<div class="toggle-option" data-toggle="course" id="course2">2 lines</div>
+						</div>
+					</h5>
+					<h5>
+						Table border
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="table" id="tableShow">Show</div>
+							<div class="toggle-option" data-toggle="table" id="tableHide">Hide</div>
+						</div>
+					</h5>
+					<h5>
+						Education year column
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="edyear" id="edyearFirst">First</div>
+							<div class="toggle-option" data-toggle="edyear" id="edyearLat">Last</div>
+						</div>
+					</h5>
+					<h5>
+						Experience layout
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="experience" id="experience1">L1</div>
+							<div class="toggle-option" data-toggle="experience" id="experience2">L2</div>
+						</div>
+					</h5>
+					<h5>
+						Projects layout
+						<div class="toggle-button">
+							<div class="toggle-option selected" data-toggle="projects" id="projects1">L1</div>
+							<div class="toggle-option" data-toggle="projects" id="projects2">L2</div>
+						</div>
+					</h5>
+					<br>
+				</div>
+
+				<h5>
+					<button class="btn btn-sm btn-block btn-primary" data-toggle="modal" data-target="#sectionToggleModal">Show/Hide sections</button>
+				</h5>
+				<hr>
+			</div>
+
+		</div>
+
+
+		<div class="col-sm-9 text-center" id="right">
+
+			<div id="page" class="droid" contenteditable="true" style="padding: 0.2cm 1.4cm 1cm; line-height: 1.4em;">
+
+				<div class="row" style="margin-bottom:10px;">
+				<div class="col-sm-12">
+				
+					
+					<div style="display: inline-block; margin-top: 25px;" id="image_box">
+						<img src="./cv og_files/srec_logo.jpg" height="120" width="=100">
+					</div>
+						
+					<div id="info">
+						<h3 id="contentName"><b>Dilip.S.T</b></h3>
+						
+						<h4 id="contentCourse" style=""><b>Sri Ramakrishna Engineering College</b></h4>
+						
+						<h5 style="font-weight: bold;"> Mobile : +91 638-724359<b><b><h5>
+						</h5><h5> E-mail : dilip1901035<b>@srec.ac.in <b> <h5>
+						</h5><h5> Linked-In : <b> www.linkedin.com/in/dilipst</b></h5><b><b>
+					</b></b></b></b></h5></b></b></h5></div><b><b><b>
+					
+					
+					<div style="display:inline-block;" id="image_box1"><br></div>
+				</b></b></b></div><b><b><b>
+				</b></b></b></div>
+
+			
+				<div class="section" id="sectionEducation" style="font-weight: bold;">
+					<div class="section-title ruled rule-above">
+						<hr class="hr-above">
+						<h4 id="title1" style="background-color: lightgray !important;"><strong>Education</strong></h4>
+						<br>
+						<hr class="hr-below">
+					</div>
+					<ul class="nobullet">
+					<li>
+						<table class="table customBordered" id="educationTable">
+							<tbody><tr style="background-color : #f0f0f0;">
+								<td class="header"><strong>Year</strong></td>
+								<td class="header"><strong>Degree / Certificate</strong></td>
+								<td class="header"><strong>Institute / School</strong></td>
+								<td class="header text-center"><strong>CGPA/Percentage</strong></td>
+							</tr>
+							<tr>
+								<td>2019 - Present</td>
+								<td>B.E - CSE </td>
+								<td>Sri Ramakrishna Engineering College</td>
+								<td class="text-center">7.77 (Current)</td>
+							</tr>
+							<tr>
+								<td>2019</td>
+								<td>HSC</td>
+								<td>SVV Hr Sec School</td>
+								<td class="text-center">83%</td>
+							</tr>
+							<tr>
+								<td>2017</td>
+								<td>SSLC</td>
+								<td>SVV Hr Sec School</td>
+								<td class="text-center">95.6%</td>
+							</tr>
+						</tbody></table>
+					</li>
+					</ul>
+				</div>
+
+				
+				<div class="section" id="sectionAreaOfInterest" style="font-weight: bold;">
+					<div class="section-title ruled rule-above">
+						<hr class="hr-above">
+						<h4 id="title2" style="background-color: lightgray !important;"><strong>Area Of Interest</strong></h4>
+						<br>
+						<hr class="hr-below">
+					</div>
+					<ul>
+					
+					<li>
+						<span class="title"> Data Structures &amp; Algorithms </span>						
+					</li>
+					
+					<li>OOPs</li><li>Web Development</li>
+					
+					</ul>
+				</div>
+
+				
+				<div class="section" id="sectionProjects" style="">
+					<div class="section-title ruled rule-above" style="font-weight: bold;">
+						<hr class="hr-above">
+						<h4 id="title3" style="background-color: lightgray !important;"><strong>Projects</strong></h4>
+						<br>
+						<hr class="hr-below">
+					</div>
+					<ul style="">
+					<li style="">
+						<div style=""><span style="font-weight: 400; color: rgb(0, 0, 0); font-family: Ubuntu; font-size: 20px;">Web Application -Ecommerce application with auction module&nbsp; &nbsp; (ongoing)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>&nbsp;This Ecommerce application is a innovative project to reduce the brokerage for the products and to add auction system in ecommerce application and increase the profit for the formers and reduce the product values by removing the middle mans.</div></li>
+					<li style="">
+						<div style="font-weight: bold;"><span style="color: rgb(0, 0, 0); font-family: Ubuntu; font-size: 20px; font-weight: 400;">Web Application for compliant registration and know details of the schemes&nbsp; &nbsp; &nbsp; &nbsp;</span><br><div class="time right"><br></div>
+						</div>
+						<div style=""><i>&nbsp; &nbsp; &nbsp; </i><i style="font-weight: bold;">&nbsp;</i>This project is to raise compliants about the scam on the government projects to the higher officials without revealing their identity and to know the schemes that are currently active in their area<span style="color: rgb(0, 0, 0); font-family: Ubuntu; font-size: 16px;">.</span><br></div></li><li style=""><div style=""><font color="#000000"><span style="font-size: 16px;"><span style="font-family: Ubuntu; font-size: 20px;">Smart Helmet&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></span></font>The objective of the project is make wearing helmet mandatory by connecting helmet with the bike.Without helmet one cannot able to start their bikes which makes them wear their helmet whenever they ride the motorcycles.</div></li>
+					</ul>
+				</div>
+
+				
+				<div class="section" id="sectionSkills" style="">
+					<div class="section-title ruled rule-above" style="">
+						<div class="section-title ruled rule-above" style=""><h4 id="title2" style=""><b>Experience</b></h4><div><b><br></b></div><div><b>ZOHO CORPORATION&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MAY-JUNE 2022</b></div><div><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b>Summer internship at ZOHO(worked on JSP,SERVLETS,DBMS).</div><div><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b></div></div><hr class="hr-above" style="font-weight: bold;">
+						<h4 id="title4" style="font-weight: bold; background-color: lightgray !important;"><strong>Technical skills</strong></h4>
+						<br>
+						<hr class="hr-below" style="font-weight: bold;">
+					</div>
+					<ul style="font-weight: bold;">
+					<li>
+						<strong><span class="skillCategory">Programming languages</span> :</strong>
+						C,&nbsp; Java .</li>
+					<li>
+						<strong><span class="skillCategory">Web technologies</span> :</strong>
+						HTML, CSS.</li>
+					<li>
+						<strong><span class="skillCategory">Database managements.</span></strong></li>
+					<li>
+						<strong><span class="skillCategory">Operating system</span> :</strong>
+						Windows, Linux</li></ul></div><div class="section" id="sectionResponsibility" style="font-weight: bold;"><ul>
+					</ul>
+				</div>
+
+				<div class="section" id="sectionStrength" style="font-weight: bold;">
+					<div class="section-title ruled rule-above">
+						<hr class="hr-above">
+						<h4 id="title6"><strong>Strength</strong></h4>
+						<hr class="hr-below">
+					</div>
+					<ul>
+					
+					<li>Problem solving</li><li>Quick Learning</li><li>
+						<span class="title"> Leadership qualities</span></li>
+					
+					<li>Team Player</li>
+					
+					</ul>
+				</div>
+				
+				
+				<div class="section" id="sectionAchievements" style="font-weight: bold; display: block;">
+					<div class="section-title ruled rule-above">
+						<hr class="hr-above">
+						<h4 id="title7"><strong>Achievements</strong></h4>
+						<br>
+						<hr class="hr-below">
+					</div>
+					<ul>
+					<li>Bussness English Certification -primilary level</li><li>C and C++ Certification.</li><li>Java Certification.</li><li>SREC INNOVATION-participationcertificate.</li>
+					</ul>
+				</div>
+
+				<div class="section" id="sectionInplantTraining" style="font-weight: bold;">
+					<div class="section-title ruled rule-above">
+						</div></div><div class="section" id="sectionCourses" style="font-weight: bold;"><div class="section-title ruled rule-above"><hr class="hr-above">
+						<h4 id="title9"><strong>Key courses taken</strong></h4>
+						<br>
+						<hr class="hr-below">
+					</div>
+					<ul>
+					<div class="row">
+						<div class="col-sm-6">
+							<li>Internet of Things</li>
+							<li>Java Programming(Great Learning)</li>
+							<li>Java and OOPs(Sololearn)</li>
+						</div>
+						<div class="col-sm-6">
+							<li>Full Stack Development</li>
+							<li>HTML and CSS</li></div></div>
+					</ul>
+				</div>
+
+			
+				<div class="section" id="sectionCurricular" style="font-weight: bold; display: block;">
+					<div id="title" class="section-title ruled rule-above">
+						<hr class="hr-above">
+						<h4 id="title10"><strong>Extracurriculars</strong></h4>
+						<br>
+						<hr class="hr-below">
+					</div>
+					<ul>
+					<li>Kabbadi-Runners in Jonnal level in coimbatore.</li>
+					
+					
+					</ul>
+				</div>
+				
+				<div class="section" id="sectionPersonalDetails" style="font-weight: bold;">
+					<div class="section-title ruled rule-above">
+						<hr class="hr-above">
+						<h4 id="title11"><strong>Personal Details</strong></h4>
+						<br>
+						<hr class="hr-below">
+					</div>
+					<ul class="nobullet">
+					<li>
+						<table style="width : 400px " class="table customBordered" id="educationTable">
+						
+							<tbody><tr>
+								<td class="header" style="background-color : #f0f0f0;"><strong>Date of birth</strong></td>
+								<td class="header">25/03/2002</td>
+							</tr>
+							
+							<tr>
+								<td style="background-color : #f0f0f0;"> <strong> Languages Known <strong> </strong></strong></td>
+								<td>English, Tamil </td>
+							</tr>
+							
+							<tr>
+								<td style="background-color : #f0f0f0;"> <strong> Address <strong> </strong></strong></td>
+								<td>3/43,<br>&nbsp;Kmlgarden,<br>Ranganathapuram,<br>sulur,coimbatore-641402</td>
+							</tr>
+							
+						</tbody></table><br><br><br><br><br><br><br><br><br><br><br><br><table style="width:100%">
+						
+							<tbody><tr>
+								<td class="header"><strong>PLACE : COIMBATORE</strong></td>
+								<td class="header" style="text-align : right"><b>Dilip.S.T</b></td>
+							</tr>
+							
+							<tr>
+								<td> <strong> DATE:24/07/2022</strong></td>
+								
+							</tr>
+							
+						</tbody></table>
+						
+						
+					</li>
+					</ul>
+				</div>
+
+			</div><b><b><b>
+		</b></b></b></div><b><b><b>
+	</b></b></b></div><b><b><b>
+
+</b></b></b></div><b><b><b>
+
+<div class="modal fade" id="usageModal" tabindex="-1" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h5><strong>Note : </strong>Use <strong>Google Chrome</strong>. Other browsers are unable to print properly and don't support some features.</h5>
+				<h4><strong>Change photo</strong></h4>
+				<ul>
+					<li> To change your photo upload it as "profile.png" in "image" folder</li>
+				</ul>
+				<h4><strong>Editing content</strong></h4>
+				<ul>
+					<li>Edit the Resume content just like a normal document editor (cut,copy,undo etc).</li>
+					<li>Entire sections can be added, reordered, removed just by cut,copy,pasting method. (Use "show/hide sections" button to hide but retain content)</li>
+					<li>To remove a section/point/mentor/link etc, just delete it.</li>
+					<li>For styled/formatted text, select the text portion and press <kbd>Ctrl+b</kbd> for bold, <kbd>Ctrl+i</kbd> for italics, <kbd>Ctrl+u</kbd> for underlined text.</li>
+				</ul>
+				
+				<h4><strong>Saving</strong></h4>
+				<ul>
+					<li>Close any popup box (like this instructions popup	) if opened. Press <kbd>Ctrl+s</kbd></li>
+					<li>This will save the webpage (a .html file and a folder will be saved. Keep them together)</li>
+					<li>Open the .html file in browser from your PC.</li>
+					<li>This way, you can maintain multiple saved copies for each profile/template on your PC.</li>
+				</ul>
+				<h4><strong>Print as PDF</strong></h4>
+				<ul>
+					<li>Adjust margin in the Chrome's print dialog box. You may need it if a section is getting split between two pages. Print each page separately with different margins if needed.</li>
+					<li>If URLs or some stray text is being shown in print preview, disable the options "Include headers and footers","Include background graphics" etc in the print dialog box.</li>
+				</ul>
+				
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="sectionToggleModal" tabindex="-1" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionEducation">Education</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionAreaOfInterest">Area Of Interest</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionProjects">Projects</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionSkills">Technical Skills</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionResponsibility">Positions of Responsibility</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionStrength">Strength</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" value="sectionAchievements" checked="checked">Achievements</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionInplantTraining">Inplant Training</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionCourses">Key courses taken</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" value="sectionCurricular" checked="checked">Extra curriculars</label></div>
+				<div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionPersonalDetails">PersonalDetails</label></div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="./cv og_files/jquery.min.js.download"></script>
+<script type="text/javascript" src="./cv og_files/bootstrap.min.js.download"></script>
+<script type="text/javascript" src="./cv og_files/main.js.download"></script>
+
+
+
+
+</b></b></b></body></html>
